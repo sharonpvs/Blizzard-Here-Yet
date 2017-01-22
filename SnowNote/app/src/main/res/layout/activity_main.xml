@@ -8,10 +8,50 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.pvs.snownote.MainActivity">
+    tools:context="com.example.pvs.snownote.MainActivity"
+    android:background="@color/colorBackground">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <ImageView
+        android:id="@+id/startlogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/titletop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <FrameLayout
+        android:id="@+id/scene_cypress"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/activity_cypress"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/scene_grouse"
+        android:layout_marginTop="215dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/activity_grouse"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/scene_seymour"
+        android:layout_marginTop="175dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/activity_seymour"/>
+
+    </FrameLayout>
 </RelativeLayout>
